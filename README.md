@@ -1,3 +1,24 @@
+## Dataset Preprocessing
+
+-- ./data/endoscopy/testA  <br>
+-- ./data/endoscopy/testB  <br>
+
+## Train sim to real
+
+```bash
+CUDA_VISIBLE_DEVICES=<guid> python3 ./scripts/train/endoscopy/bert_endoscopy-256.py --batch-size <batch_size>
+```
+
+## Test sim to real
+
+- Then generate the results using
+```bash
+CUDA_VISIBLE_DEVICES=<guid> python3 scripts/translate_images.py <PATH_TO_TRAINED_MODEL> -n 100
+```
+
+output path 
+-- ./outdir/endoscopy
+
 # Overview
 
 This package provides CycleGAN and generator implementations used in the
