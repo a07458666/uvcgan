@@ -151,6 +151,10 @@ args_dict = {
             { 'name' : 'random-crop', 'size' : 256, },
             'random-flip-horizontal',
         ],
+        'transform_val' : [
+            { 'name' : 'resize',      'size' : 256, },
+            { 'name' : 'center-crop', 'size' : 256, },
+        ],
     },
     'image_shape' : (3, 256, 256),
     'epochs'      : 500,
