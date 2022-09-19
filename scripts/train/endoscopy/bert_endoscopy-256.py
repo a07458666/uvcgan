@@ -81,6 +81,10 @@ args_dict = {
                 'hue'        : 0.2,
             },
         ],
+        'transform_val' : [
+            { 'name' : 'resize',      'size' : 256, },
+            { 'name' : 'center-crop', 'size' : 256, },
+        ],
     },
     'image_shape' : (3, 256, 256),
     'epochs'      : 2499,
